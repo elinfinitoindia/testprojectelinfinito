@@ -1,0 +1,278 @@
+.segment-md-primary .segment-button {
+  color: black;
+  text-overflow: clip;
+}
+
+#popularcards {
+  width: 25vw;
+  margin: 5px;
+  height: 50px; // width: 25vw;
+  // margin: 5px;
+  // height: 130px;
+}
+
+#popularcards img {
+  width: -webkit-fill-available;
+}
+
+#popularcarditems {
+  padding-left: 0px !important;
+}
+
+#popularstoresscroll {
+  margin: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#catoffers {
+  width: 100px;
+  height: 60px;
+  border-right: 1px solid gray;
+}
+
+#searchwebsiteheader {
+  padding: 5px;
+}
+
+#searchwebsiteheader span {
+  color: white;
+}
+
+// #searchlabel {
+//   margin-top: 6%;
+// }
+.viewall {
+  font-weight: 300;
+  text-transform: none;
+  text-decoration: unset;
+  color: #6200EA;
+}
+
+.nopaddin {
+  padding: 0px;
+}
+
+ion-row {
+  padding: 0px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+// ion-col {
+//   padding: 0px;
+//   margin-left: 0px !important;
+//   margin-right: 0px !important;
+// }
+.thumbnails {
+  // float: left;
+  // position: relative;
+  // left: 30px;
+  // top: -30px;
+  // overflow: hidden;
+}
+
+#imageovercard {
+  width: 36%;
+  margin-top: -59px;
+  z-index: 10000;
+  position: absolute;
+  /* border-radius: 19%; */
+  background: white;
+}
+
+#fixedheight {
+  height: 10vh;
+}
+
+.swiper-slide img {
+  /* width: auto; */
+  max-width: 100%;
+  height: 180px;
+  /* max-height: 100%; */
+}
+
+.segment-md-theme .segment-button {
+  color: black;
+}
+
+ion-segment {
+  margin-top: 0px !important;
+  text-overflow: ellipsis;
+  overflow: visible;
+  padding-left: 0px !important;
+}
+
+page-home {
+  .segment-md-primary .segment-button.activated,
+  .segment-md-primary .segment-button.segment-activated {
+    color: #6200EA;
+    border-color: #6200EA;
+    border-bottom: 3px solid;
+  }
+  .slide-zoom {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .swiper-slide img {
+    height: auto;
+  }
+  #dealslides {
+    max-width: 100%;
+    height: 180px;
+  }
+  .apptitle {
+    color: white;
+    font-weight: 600;
+  }
+  ion-scroll {
+    white-space: nowrap;
+    height: 100%;
+    margin-top: 10px;
+  }
+  ion-scroll[scrollX] {
+    white-space: nowrap;
+    height: 200px;
+    overflow: hidden;
+    .scroll-item {
+      display: inline-block;
+    }
+    .selectable-icon {
+      margin: 10px 20px 10px 20px;
+      color: red;
+      font-size: 100px;
+    }
+    img {
+      margin: 5px;
+      width: 80px;
+      height: 100%;
+    }
+  }
+  ion-scroll[scroll-avatar] {
+    height: 58px; // height: 140px;
+  }
+  /* Hide ion-content scrollbar */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ion-title {
+    margin: 0 20vw !important
+  }
+  .first {
+    position: fixed;
+    top: 0px;
+    margin-top: -2px;
+    z-index: 1000000;
+  }
+  .second {
+    position: absolute;
+  }
+  .segment-md .segment-button {
+    border-bottom-style: none;
+  }
+  .logo {
+    width: 90px;
+  }
+  .nopaddingcol {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .list-md .item-block .item-inner {
+    border-bottom: 0px solid #dedede !important;
+  }
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+  .swiper-slide .cate {
+    width: 53px !important;
+  }
+  #largecardcontainer {
+    margin: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 140px;
+    margin-top: 0px;
+  }
+  #largecard {
+   
+    position: relative;
+    text-align: center;
+    height: 125px;
+    width: 33vw;
+    margin-right: 0px;
+    padding: 0px;
+    margin-left: 5px;
+  }
+  #popularcatego {
+    margin: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 140px;
+    margin-top: 0px;
+  }
+  #popularcatcards {
+    width: 30vw;
+    height: 54px;
+    position: relative;
+    text-align: center; // height: 80px;
+    // width: 40vw;
+    // height: 125px;
+    // width: 35vw;
+  }
+  #popularcatcards {
+    margin-left: 4px;
+    margin-right: 0px;
+  }
+  .card-title {
+    position: absolute;
+    top: 83%;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    color: grey
+  }
+  .item-md.item-block .item-inner {
+    padding-right: 0px;
+  }
+  .totaloffers {
+    color: black;
+    font-size: 1em;
+    top: 70%;
+    text-align: left;
+  }
+  #cardslogo {
+    // height: 50px;
+    // margin: auto;
+    // margin-top: 8px;
+    // width: 110px;
+    height: 50px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .largecardimg {
+    width: 100% !important;
+    margin: 30px auto !important;
+    height: 45px !important;
+  }
+  .cartcard-title {
+    position: absolute;
+    top: 20%;
+    font-size: 1.7em;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+  }
+}

@@ -1,0 +1,125 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pagetitle">
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card id="dealcard">
+
+
+    <ion-card-content style="background: mediumpurple;color: white;font-weight: 500;">
+      <ion-row>
+        <ion-col col-4 style="background: white;height: 15vh;">
+          <img src="assets/imgs/Ajio.png" alt="" style="top: 5vh;
+            position: relative;">
+        </ion-col>
+        <ion-col col-8 text-center>
+          <div>
+            Store Name dynamic data
+          </div>
+          <div>
+            Total Offers:
+          </div>
+
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-row>
+    <ion-col> -->
+  <!-- <ion-card id="catcards" *ngFor="let items of categories let i = index">
+        <ion-card-content (click)="getAppLink(items)">
+          <ion-row>
+            <ion-col col-4>
+              <ion-avatar item-left class="thumbnails">
+                <img src="../../assets/imgs/Ajio.png" id="catoffers">
+              </ion-avatar>
+            </ion-col>
+            <ion-col col-8>
+              <span>Application Name</span>
+              <div class="offerdescription">
+                This application is wonderful for photographer
+              </div>
+            </ion-col>
+            <ion-col col-12 text-right>
+              <ion-avatar item-left>
+                <ion-icon name="share" class="shareicon" color="theme"></ion-icon>
+              </ion-avatar>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card> -->
+
+  <ion-list [virtualScroll]="categories">
+    <ion-item *virtualItem="let item">
+      <ion-card id="catcards nopaddingoffercard">
+        <ion-card-content style="padding:5px;">
+          <ion-row>
+            <ion-col item-left class="nopaddingcol" style="margin-top: 5px;    margin-bottom: 0px;">
+              <img src="assets/imgs/Ajio.png" class="logo">
+            </ion-col>
+            <ion-col col-12>
+              <p style="white-space: normal;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, iusto? Quae, quidem possimus aut nisi eius dolore nemo?
+              </p>
+            </ion-col>
+            <ion-col style="    padding-top: 0px;
+            padding-bottom: 0px;">
+              <ion-icon ios="ios-cash" md="md-cash" color="theme"></ion-icon>
+              <span style="color:blueviolet">Flat 25 CD Cashback </span>
+            </ion-col>
+
+
+
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-item>
+  </ion-list>
+  <!-- </ion-col> -->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <!-- </ion-row> -->
+  <ion-grid>
+    <ion-row class="shareappbottom">
+      <ion-col col-12 text-center>
+        Love The App?
+      </ion-col>
+      <ion-col col-12 text-center>
+        Why not share SHare it ?
+      </ion-col>
+      <ion-col col-12 text-center>
+        icons
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<!-- <ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-8>
+        <button ion-button clear style="color:white;margin: 0px;">Coupon</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button clear style="color:white;margin: 0px;">Visit Site</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer> -->

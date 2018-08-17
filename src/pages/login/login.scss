@@ -1,0 +1,35 @@
+page-login {
+  .image-center {
+    margin-left: 35vw;
+    margin-top: 5vh;
+  }
+  .welcomecolor {
+    color: blueviolet;
+  }
+  .margintop {
+    margin-top: 3vh;
+  }
+  .item-input-has-focus .label-md[stacked],
+  .input-has-focus .label-md[stacked],
+  .item-input-has-focus .label-md[floating],
+  .input-has-focus .label-md[floating] {
+    color: blueviolet;
+  }
+  .item-md {
+    padding: 0px;
+  }
+  .submitbutton {
+    background: blueviolet;
+  }
+  .forgotbutton {
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  .forgotbutton span {
+    color: blueviolet;
+    font-size: small;
+  }
+  .registermargin {
+    margin-top: 3%;
+  }
+}

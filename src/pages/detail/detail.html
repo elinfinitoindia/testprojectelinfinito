@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="pagetitle">
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar class="segmentcol">
+    <ion-row>
+      <ion-col class="segmentcol">
+        <ion-segment [(ngModel)]="stores" color="primary" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="popularstores">
+            Popular
+          </ion-segment-button>
+          <ion-segment-button value="allstores">
+            All
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content>
+  <!-- <ion-card id="fullwidthcard"> 
+          <ion-card-content>
+        <ion-row>
+          {{title}}
+          <ion-grid>
+            <ion-row>
+              <ion-segment [(ngModel)]="stores" color="primary" (ionChange)="segmentChanged($event)">
+                <ion-segment-button value="popularstores">
+                  Popular
+                </ion-segment-button>
+                <ion-segment-button value="allstores">
+                  All
+                </ion-segment-button>
+              </ion-segment>
+            </ion-row>
+          </ion-grid>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>  -->
+  <ion-list>
+    <!-- <ion-item *ngFor="let items of items1" id="items">
+      {{items.title}}
+    </ion-item> -->
+    <ion-item *ngFor="let items of categories" (click)="detail($event)" id='{{items.title}}'>
+      <span>{{items.title}}</span>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 text-center>
+            Love The App?
+          </ion-col>
+          <ion-col col-12 text-center>
+            Why not share SHare it ?
+          </ion-col>
+          <ion-col col-12 text-center>
+            icons
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

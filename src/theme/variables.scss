@@ -1,0 +1,229 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+@import "ionic.globals";
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: ( primary: #488aff, secondary: #32db64, danger: #f53d3d, light: #f4f4f4, dark: #222, menulight: white, twitter:#55acee, whatsapp:#25d366, facebook:#3b5998, google:#ea4335, theme:#6200EE, primarytext:black, secondary-text:grey);
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+ion-col {
+  span {
+    font-size: large;
+  }
+}
+
+.profiledetails {
+  padding-top: 10%;
+  font-size: large;
+  color: white;
+}
+
+.profileimage {
+  border-radius: 50%;
+}
+
+$SIDEMENU_TOP:#9796f0;
+$SIDEMENU_BOTTOM:#fbc7d4;
+// toolbar color of application 
+// change tab color
+$tabs-background:white; // for background color of application
+.card-header {
+  background: #7F58C3 !important;
+  color: white !important;
+}
+
+.card-md {
+  border-radius: 4px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+}
+
+// image opacity 
+.item {
+  contain: initial !important;
+}
+
+$toolbar-background:blueviolet;
+.toolbar-background-md {
+  border-color: #b2b2b2;
+  background-attachment: fixed;
+}
+
+// $background-md-color:#F5F7F9;
+$menu-md-background:white;
+ion-footer {
+  bottom: 56px;
+  height: 54px;
+  background: #7F58C3 !important;
+  color: white;
+}
+
+#fullwidthcard {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 0px !important;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+  color: #6200EE !important;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  color: #6200EE !important;
+}
+
+$fab-md-background-color:#6200EE;
+.card-header-md span {
+  color: black;
+}
+
+// offer description color applevel
+.offerdescription {
+  color: gray;
+}
+
+$text-input-md-highlight-color: #6200EE;
+.item-input-has-focus .label-md[stacked],
+.input-has-focus .label-md[stacked],
+.item-input-has-focus .label-md[floating],
+.input-has-focus .label-md[floating] {
+  color: #6200EE !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #6200EE !important;
+}
+
+.apptitle {
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar .segment-md .segment-button.segment-activated {
+  color: white;
+  border-color: white !important;
+  border-bottom: 2px solid;
+}
+
+.toolbar .segment-md .segment-button {
+  color: white;
+  opacity: 1;
+  font-size: larger;
+  border: none;
+}
+
+// no bottom paddign segment col
+.segmentcol {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px;
+}
+
+// no bottom padding segment card
+.segmentcard {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+// no bottompadding grid class
+.segmentgrid {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+// to reduce the height and bottom distance from segment borders
+.toolbar-md {
+  min-height: 52px !important;
+}
+
+// to center image 
+.centerimage {
+  margin: 0 auto;
+}
+
+.pagetitle .toolbar-title-md {
+  font-weight: 600;
+  padding: 0 0px;
+}
+
+.nopaddingcard {
+  padding-top: 10px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 5px !important;
+}
+
+// ion-card {
+//   margin-top: 12px !important;
+// }
+.label-md {
+  margin: 0px !important;
+}
+
+.nobottommargin {
+  margin-bottom: 0px !important;
+}
+
+.offercards {
+  padding: 8px 5px !important;
+}
+
+// to center the search input box on homepage
+.searchinput {
+  padding-right: 16px !important;
+}
+
+.nopaddingdealcard {
+  padding: 0px !important;
+}
+
+.mx5 {
+  margin-top: 5px;
+}
+
+.nopaddingoffercard {
+  padding-top: 0px !important;
+}
+
+.nopaddingrow {
+  padding: 0px !important;
+}
+
+// --------------------------------------------------
+// Windows only Sass variables can go here
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default"; // Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+@import "ionic.ionicons"; // Fonts
+// --------------------------------------------------
+@import "roboto";
+@import "noto-sans";

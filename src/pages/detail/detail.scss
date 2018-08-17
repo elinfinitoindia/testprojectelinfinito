@@ -1,0 +1,35 @@
+page-detail {
+  .toolbar .segment-md .segment-button.segment-activated {
+    color: white;
+    border-color: white !important;
+    opacity: 1;
+    border-bottom: 2px solid;
+  }
+  ion-segment {
+    margin-top: 15%;
+  }
+  .toolbar .segment-md .segment-button {
+    color: white;
+    opacity: 1;
+    font-size: larger;
+    border: none;
+  }
+  .toolbar .segment-md {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .toolbar-background-md {
+    // border-color: #b2b2b2;
+    // background: url(../../assets/imgs/tool.jpeg) no-repeat;
+    // background-attachment: fixed;
+  }
+  .toolbar-md {
+    padding-bottom: 1px;
+  }
+  .item-block {
+    min-height: 6.4rem;
+  }
+  .list-md {
+    margin: 0px;
+  }
+}

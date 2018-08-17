@@ -1,0 +1,17 @@
+page-brands {
+  .segment-md-primary .segment-button.activated,
+  .segment-md-primary .segment-button.segment-activated {
+    color: white;
+    border-color: white;
+  }
+  .segment-md-primary {}
+  .segment-md-primary .segment-button {
+    color: white;
+  }
+  .brandlist {
+    margin-top: 10px;
+  }
+  .slide-zoom {
+    height: 100%;
+  }
+}

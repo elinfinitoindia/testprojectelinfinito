@@ -1,0 +1,140 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pagetitle">
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+
+  <!-- slider deals -->
+  <ion-row>
+    <ion-card id="fullwidthcard" style="    margin-top: 0px;">
+      <ion-slides autoplay="5000" loop="true" speed="3000">
+        <ion-slide>
+          <img src="assets/imgs/Ajio.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/logo.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/logo.png">
+        </ion-slide>
+      </ion-slides>
+    </ion-card>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+      <!-- Mens Fashion sliding cards -->
+      <ion-card id="fullwidthcard">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-8>
+              <span>Mens Fashion</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-slides slidesPerView=2 (ionSlideTap)="tap($event)" id="dealslides">
+          <ion-slide>
+            <ion-row id="popularcatcards">
+              <ion-col col-12>
+                <img src="assets/imgs/banner.jpg">
+              </ion-col>
+              <ion-col col-12 style="margin-top: -8px;">
+                <span>Lorem, ipsum.</span>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+          <ion-slide>
+            <ion-row id="popularcatcards">
+              <ion-col col-12>
+                <img src="assets/imgs/banner.jpg">
+              </ion-col>
+              <ion-col col-12 style="margin-top: -8px;">
+                <span>Lorem, ipsum.</span>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+          <ion-slide>
+            <ion-row id="popularcatcards">
+              <ion-col col-12>
+                <img src="assets/imgs/banner.jpg">
+              </ion-col>
+              <ion-col col-12 style="margin-top: -8px;">
+                <span>Lorem, ipsum.</span>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+        </ion-slides>
+      </ion-card>
+
+    </ion-col>
+
+    <ion-col>
+      <!-- Women fashion -->
+      <ion-card id="fullwidthcard">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-8>
+              <span>Women Fashion</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-slides slidesPerView=2 (ionSlideTap)="tap($event)" id="dealslides">
+          <ion-slide>
+            <ion-row id="popularcatcards">
+              <ion-col col-12>
+                <img src="assets/imgs/banner.jpg">
+              </ion-col>
+              <ion-col col-12 style="margin-top: -8px;">
+                <span>Lorem, ipsum.</span>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+          <ion-slide>
+            <ion-row id="popularcatcards">
+              <ion-col col-12>
+                <img src="assets/imgs/banner.jpg">
+              </ion-col>
+              <ion-col col-12 style="margin-top: -8px;">
+                <span>Lorem, ipsum.</span>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+          <ion-slide>
+            <ion-row id="popularcatcards">
+              <ion-col col-12>
+                <img src="assets/imgs/banner.jpg">
+              </ion-col>
+              <ion-col col-12 style="margin-top: -8px;">
+                <span>Lorem, ipsum.</span>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+        </ion-slides>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+
+  <!-- women deal -->
+
+
+  <!-- special deal -->
+
+
+  <!-- mobile -->
+
+
+  <!-- electonics -->
+
+
+
+</ion-content>

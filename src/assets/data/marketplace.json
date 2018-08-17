@@ -1,0 +1,345 @@
+{
+  "marketplace": [{
+    "name": "Burt Bear",
+    "profilePic": "assets/img/speakers/bear.jpg",
+    "link": "ionicframework",
+    "about": "Burt is a Bear.",
+    "id": "1"
+  }, {
+    "name": "Charlie Cheetah",
+    "profilePic": "assets/img/speakers/cheetah.jpg",
+    "link": "ionicframework",
+    "about": "Charlie is a Cheetah.",
+
+    "id": "2"
+  }, {
+    "name": "Donald Duck",
+    "profilePic": "assets/img/speakers/duck.jpg",
+    "link": "ionicframework",
+    "about": "Donald is a Duck.",
+
+    "id": "3"
+  }, {
+    "name": "Eva Eagle",
+    "profilePic": "assets/img/speakers/eagle.jpg",
+    "link": "ionicframework",
+    "about": "Eva is an Eagle.",
+
+    "id": "4"
+  }, {
+    "name": "Ellie Elephant",
+    "profilePic": "assets/img/speakers/elephant.jpg",
+    "link": "ionicframework",
+    "about": "Ellie is an Elephant.",
+
+    "id": "5"
+  }, {
+    "name": "Gino Giraffe",
+    "profilePic": "assets/img/speakers/giraffe.jpg",
+    "link": "ionicframework",
+    "about": "Gino is a Giraffe.",
+
+    "id": "6"
+  }, {
+    "name": "Isabella Iguana",
+    "profilePic": "assets/img/speakers/iguana.jpg",
+    "link": "ionicframework",
+    "about": "Isabella is an Iguana.",
+
+    "id": "7"
+  }, {
+    "name": "Karl Kitten",
+    "profilePic": "assets/img/speakers/kitten.jpg",
+    "link": "ionicframework",
+    "about": "Karl is a Kitten.",
+
+    "id": "8"
+  }, {
+    "name": "Lionel Lion",
+    "profilePic": "assets/img/speakers/lion.jpg",
+    "link": "ionicframework",
+    "about": "Lionel is a Lion.",
+
+    "id": "9"
+  }, {
+    "name": "Molly Mouse",
+    "profilePic": "assets/img/speakers/mouse.jpg",
+    "link": "ionicframework",
+    "about": "Molly is a Mouse.",
+
+    "id": "10"
+  }, {
+    "name": "Paul Puppy",
+    "profilePic": "assets/img/speakers/puppy.jpg",
+    "link": "ionicframework",
+    "about": "Paul is a Puppy.",
+
+    "id": "11"
+  }, {
+    "name": "Rachel Rabbit",
+    "profilePic": "assets/img/speakers/rabbit.jpg",
+    "link": "ionicframework",
+    "about": "Rachel is a Rabbit.",
+
+    "id": "12"
+  }, {
+    "name": "Ted Turtle",
+    "profilePic": "assets/img/speakers/turtle.jpg",
+    "link": "ionicframework",
+    "about": "Ted is a Turtle.",
+
+    "id": "13"
+  }],
+
+  "Offers": [{
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "1"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "2"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "3"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "4"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "5"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "6"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "7"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "8"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "9"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Shopping",
+      "SubCat": "Fashion",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "10"
+
+    },
+    {
+      "name": "Burt Bear",
+      "Coupon": "Coupon1",
+      "Description": "Get 25% of today",
+      "Category": "Food",
+      "SubCat": "Dine",
+      "Store": "Amazon",
+      "Link": "http://elinfinitoindia.in",
+      "id": "11"
+    }
+  ],
+
+  "Deals": [{
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Recharge",
+      "SubCat": "Electronics",
+      "id": "1"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "2"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "3"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "4"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "5"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "6"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "7"
+    }
+  ],
+  "Brands": [{
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "1"
+    }, {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "2"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "3"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "4"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "5"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "6"
+    },
+    {
+      "Name": "Moto E 4",
+      "Image": "assets/img/speakers/puppy.jpg",
+      "Link": "http://elinfinitoindia.in",
+      "Store": "Amazon",
+      "Category": "Shopping",
+      "SubCat": "Electronics",
+      "id": "7"
+    }
+  ]
+
+
+}

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pagetitle">
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card id="catcards" *ngFor="let items of categories let i = index">
+        <ion-card-content (click)="getAppLink(items)">
+          <ion-row>
+            <ion-col col-4 id="logocol">
+              <ion-avatar item-left class="thumbnails">
+                <img src="assets/imgs/Ajio.png" id="catoffers">
+              </ion-avatar>
+            </ion-col>
+            <ion-col col-8>
+              <ion-row>
+                <ion-col col-12>
+                  <span>Application Name</span>
+                </ion-col>
+                <ion-col col-12>
+                  This application is wonderful for photographer
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+
+          <ion-row text-center>
+            <ion-col col-12>
+
+
+              <button ion-button round small>Install</button>
+
+            </ion-col>
+
+          </ion-row>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-row>
+
+</ion-content>

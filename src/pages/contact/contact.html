@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pagetitle">
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides (ionSlideWillChange)="slidechange($event)">
+    <ion-slide>
+      2
+    </ion-slide>
+    <ion-slide>
+      3
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,286 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pagetitle">Deals Wale</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content #content>
+
+  <ion-card>
+    <ion-card-header id="searchwebsiteheader">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 text-center id="searchlabel">
+            <span>Write Once Search Anywhere</span>
+            <br>
+            <span style="white-space: normal;text-align: center"></span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+    <ion-card-content class="nopaddingcard">
+      <ion-row>
+        <ion-col col-12 text-center class="searchinput">
+          <ion-item>
+            <ion-label>Search</ion-label>
+            <ion-input type="" placeholder="Enter item to search on stores" [(ngModel)]="search"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="showlinks">
+        <ion-col col-12 text-center>
+          <ion-item text-center>
+            <button ion-button round>Search</button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-item no-lines id="popularcarditems">
+          <ion-scroll scrollX="true" scroll-avatar id="popularstoresscroll">
+            <ion-card class="scroll-item" id="popularcards" (click)="getList();">
+              <img src="assets/imgs/Ajio.png" class="scroll-item" />
+            </ion-card>
+            <ion-card class="scroll-item" id="popularcards">
+              <img src="assets/imgs/af.png" class="scroll-item" />
+            </ion-card>
+            <ion-card class="scroll-item" id="popularcards">
+              <img src="assets/imgs/sdfg.png" class="scroll-item" />
+            </ion-card>
+          </ion-scroll>
+        </ion-item>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- deals of the day  -->
+  <ion-card id="fullwidthcard">
+    <ion-slides autoplay="5000" loop="true" speed="4000" pager="true" (ionSlideTap)="tap($event)" id="dealslides">
+      <ion-slide *ngFor="let items of categories">
+        <img src="assets/imgs/banner.jpg">
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <!-- popular stores -->
+  <ion-row class="nopaddingrow">
+    <ion-col class="nopaddingrow">
+      <ion-card id="fullwidthcard">
+        <ion-card-content class="nopaddingcard">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>
+                <span>Popular Brands</span>
+              </ion-col>
+              <ion-col col-4 text-right class="nopaddin">
+                <button ion-button clear small id="Brands" class="viewall" (click)="showAllOffers($event)">View All</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-item no-lines id="popularcarditems">
+            <ion-scroll scrollX="true" scroll-avatar id="largecardcontainer">
+              <ion-card class="scroll-item" id="largecard" (click)="getList();">
+                <img src="assets/imgs/Ajio.png" class="largecardimg" />
+                <div class="card-title">Total Offers: 22</div>
+              </ion-card>
+              <ion-card class="scroll-item" id="largecard" (click)="getList();">
+                <img src="assets/imgs/foodpanda1.png" class="largecardimg" />
+                <div class="card-title">Total Offers: 22</div>
+              </ion-card>
+              <ion-card class="scroll-item" id="largecard" (click)="getList();">
+                <img src="assets/imgs/af.png" class="largecardimg" />
+                <div class="card-title">Total Offers: 22</div>
+              </ion-card>
+            </ion-scroll>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-card id="fullwidthcard">
+    <img src="assets/imgs/banner4.jpg">
+  </ion-card>
+
+  <!-- offers by brands -->
+  <ion-row class="nopaddingrow">
+    <ion-col class="nopaddingrow">
+      <ion-card id="fullwidthcard">
+        <ion-card-content class="nopaddingcard">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>
+                <span>Popular Brands</span>
+              </ion-col>
+              <ion-col col-4 text-right class="nopaddin">
+                <button ion-button clear small id="Brands" class="viewall" (click)="showAllOffers($event)">View All</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-item no-lines id="popularcarditems">
+            <ion-scroll scrollX="true" scroll-avatar id="largecardcontainer">
+              <ion-card class="scroll-item" id="largecard" (click)="getList();">
+                <img src="assets/imgs/Ajio.png" class="largecardimg" />
+                <div class="card-title">Total Offers: 22</div>
+              </ion-card>
+              <ion-card class="scroll-item" id="largecard" (click)="getList();">
+                <img src="assets/imgs/foodpanda1.png" class="largecardimg" />
+                <div class="card-title">Total Offers: 22</div>
+              </ion-card>
+              <ion-card class="scroll-item" id="largecard" (click)="getList();">
+                <img src="assets/imgs/af.png" class="largecardimg" />
+                <div class="card-title" class="largecardimg">Total Offers: 22</div>
+              </ion-card>
+            </ion-scroll>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-card>
+    <img src="assets/imgs/banner3.png">
+  </ion-card>
+
+  <ion-row class="nopaddingrow">
+    <ion-col class="nopaddingrow">
+      <ion-card id="fullwidthcard">
+        <ion-card-content class="nopaddingcard">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>
+                <span>Popular Categories</span>
+              </ion-col>
+              <ion-col col-4 text-right class="nopaddin">
+                <button ion-button clear small id="Brands" class="viewall" (click)="showAllOffers($event)">View All</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <ion-slides slidesPerView=3 (ionSlideTap)="tap($event)" id="">
+            <ion-slide>
+              <ion-row id="">
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-bottom: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-top: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Recharge</div>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+            <ion-slide>
+              <ion-row id="">
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-bottom: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Electronics</div>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-top: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Mobiles</div>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+            <ion-slide>
+              <ion-row id="">
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-bottom: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-top: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-row id="">
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-bottom: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-top: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+            <ion-slide>
+              <ion-row id="">
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-bottom: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  <ion-card class="scroll-item" id="popularcatcards" (click)="getList();" style="    margin-top: 0px;">
+                    <img src="assets/imgs/banner.jpg" style="width: 100%;margin: 0px;" />
+                    <div class="cartcard-title">Food</div>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+          </ion-slides>
+
+
+
+
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-card>
+    <img src="assets/imgs/banner2.jpg">
+  </ion-card>
+
+  <ion-fab bottom right #fab>
+    <button ion-fab>
+      <ion-icon name="share" class="sharebtn"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <button ion-fab color="whatsapp" (click)="openSocial('Whatsapp', fab)">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </button>
+      <button ion-fab color="google" (click)="openSocial('Gmail', fab)">
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
+      <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+      <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

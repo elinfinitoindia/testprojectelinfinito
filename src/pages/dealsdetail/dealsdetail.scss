@@ -1,0 +1,62 @@
+page-dealsdetail {
+  .reportproblem .button-md {
+    padding: 0px;
+    color: blueviolet;
+    text-transform: none;
+    font-size: medium !important;
+  }
+  #descriptioncard {
+    margin-top: 4%;
+    border-radius: 0px !important;
+  }
+  #footeritem {
+    height: 60px;
+    background: blueviolet;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #coupondetails {
+    margin: 0px;
+  }
+  .couponbtngrid .button-inner {
+    font-size: medium;
+  }
+  .card-header-md span {
+    color: white;
+    font-size: medium;
+    text-transform: none;
+  }
+  .card-header-md {
+    padding-top: 3px;
+    padding-bottom: 5px;
+  }
+  .card-content-md {
+    padding-top: 0px;
+  }
+  ion-grid {
+    padding: 10px;
+  }
+  p {
+    color: gray;
+  }
+  .fab {
+    width: 46px;
+    height: 46px;
+  }
+  .list-md {
+    margin: 0px;
+  }
+  ion-label {
+    color: gray;
+  }
+  .fab-close-icon {
+    line-height: 46px;
+  }
+}
+
+#dealcard {
+  width: 100%;
+  margin: 0px;
+  border-radius: 0px !important;
+}

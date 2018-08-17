@@ -1,0 +1,90 @@
+// page-about {
+//   ion-content {
+//     position: fixed;
+//   }
+//   .toolbar .segment-md .segment-button.segment-activated {
+//     color: white;
+//     border-color: white !important;
+//     opacity: 1;
+//     border-bottom: 3px solid;
+//   }
+//   ion-segment {
+//     margin-top: 15%;
+//   }
+//   .toolbar .segment-md .segment-button {
+//     color: white;
+//     opacity: 1;
+//     font-size: larger;
+//     border: none;
+//   }
+//   ion-segment {
+//     margin-top: 15%;
+//   }
+//   ion-navbar {
+//     color: white;
+//   }
+//   ion-col {
+//     span {
+//       font-size: large;
+//     }
+//   }
+//   ion-card-header {
+//     padding-bottom: 0px;
+//   }
+//   .shopstores {
+//     padding: 0px;
+//     margin: 0px;
+//     width: 100%;
+//   }
+//   #popularcards {
+//     width: 30vw;
+//     margin: 5px;
+//     height: 75px;
+//   }
+//   #popularcards img {
+//     width: -webkit-fill-available;
+//   }
+//   .icongrid {
+//     font-size: 4em;
+//   }
+//   .offergrid {
+//     border-right: 1px solid gray;
+//     border-bottom: 1px solid gray;
+//     padding: 0px
+//   }
+//   .offergrid:nth-child(4n+0) {
+//     border-right: none;
+//   }
+//   $background-md-color:lightgray;
+//   .toolbar .segment-md .segment-button.segment-activated {
+//     color: white;
+//     border-color: white !important;
+//     opacity: 1;
+//     border-bottom: 3px solid;
+//   }
+//   ion-segment {
+//     margin-top: 15%;
+//   }
+//   .toolbar .segment-md .segment-button {
+//     color: white;
+//     opacity: 1;
+//     font-size: larger;
+//     border: none;
+//   }
+//   .toolbar .segment-md {
+//     margin: 0 auto;
+//     margin-top: 40px;
+//   }
+// }
+.toolbar .segment-md .segment-button.segment-activated {
+  color: white;
+  border-color: white !important;
+  border-bottom: 2px solid;
+}
+
+.toolbar .segment-md .segment-button {
+  color: white;
+  opacity: 1;
+  font-size: larger;
+  border: none;
+}

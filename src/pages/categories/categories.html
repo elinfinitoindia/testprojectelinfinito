@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="pagetitle">
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar class="segmentcol">
+    <ion-row>
+      <ion-col class="segmentcol">
+        <ion-segment [(ngModel)]="categories" color="theme">
+          <ion-segment-button value="popularoffers" (click)="selectTab(0)" value="0">
+            Popular
+          </ion-segment-button>
+          <ion-segment-button value="alloffers" (click)="selectTab(1)" value="1">
+            All
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-toolbar>
+
+</ion-header>
+<ion-content>
+
+  <ion-slides #pageSlider (ionSlideWillChange)="changeWillSlide($event)">
+    <ion-slide>
+
+      1
+
+    </ion-slide>
+    <ion-slide>
+      <ion-row>
+        <ion-col>
+          <ion-card id="catcards" *ngFor="let items of offers">
+            <ion-card-content (click)="getdetailoffers($index)">
+              <ion-row>
+                <ion-col>
+                  <ion-avatar item-left class="thumbnails">
+                    <img src="assets/imgs/Ajio.png" id="catoffers">
+                  </ion-avatar>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </ion-row>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
